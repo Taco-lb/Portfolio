@@ -1,0 +1,42 @@
+:root {
+    font-family: 'Fira Code' ,Inter;
+    line-height: 1.5;
+    font-weight: 400;
+    background: #242424;
+    background-image: url("../src/assets/images/Background.png");
+    background-size: cover;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --terminal-color: rgb(11, 8, 47);
+    --terminal-hover: rgb(11, 8, 47, 0.4); 
+    --terminal-bar: rgb(75, 75, 75);
+    --terminal-scroll: rgb(117, 122, 139);
+    --font-white: rgb(249, 249, 249);
+
+    /* Minimalist Scrollbar for WebKit browsers */
+	::-webkit-scrollbar {
+		width: 0.25rem;
+		height: 0.25rem;
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--terminal-scroll);
+		border-radius: 1rem;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--font-white);
+	}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
