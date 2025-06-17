@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ContentLayout from "../layout/ContentLayout";
-import { IconBrandGithub, IconMail, IconBrandLinkedin } from "@tabler/icons-react";
+import { IconBrandGithub, IconMail, IconBrandLinkedin, IconFilePencil } from "@tabler/icons-react";
 
 const IconsContainer = styled.div`
     display: flex;
@@ -30,6 +30,7 @@ const TextContainer = styled.div`
     margin: 0;
 `;
 
+
 export default function Contact () {
 
     return(
@@ -50,6 +51,9 @@ export default function Contact () {
                 </Icons>
                 <Icons href="https://www.linkedin.com/in/antoinemharb/" target="_blank" rel="noopener noreferrer">
                     <IconBrandLinkedin size={55}/>
+                </Icons>
+                <Icons href="https://forms.cloud.microsoft/r/2JUkszh3Jb" target="_blank" rel="noopener noreferrer">
+                    <IconFilePencil size={55} title="Submit Request / Inquiry"/>
                 </Icons>
             </IconsContainer>
             <br/>
