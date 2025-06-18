@@ -83,7 +83,7 @@ export default function About () {
                         </TextContainer>
                         <ProfilePicture src={ProfilePic}></ProfilePicture>
                     </TextSideImageContainer>
-                </li><br/>
+                </li>
                 <li>
                     Proficient in the following technologies:
                 </li>
@@ -91,7 +91,7 @@ export default function About () {
            )}
            <br/>
            <AutoScrollable images={images} />
-           <br/><br/>
+           <br/>
         </ContentLayout>
     );
 }

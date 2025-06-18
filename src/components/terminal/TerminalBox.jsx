@@ -17,7 +17,7 @@ const ShadowAnimation = keyframes`
 
 const MainContainer = styled(motion.div)`
     width: 100%;
-    max-height: calc(100% - 3.5rem);
+    max-height: calc(75% - 3.5rem);
     margin: 0;
     padding: 0;
     animation: ${ShadowAnimation} 5s ease-in-out infinite;
