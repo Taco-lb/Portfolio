@@ -21,8 +21,8 @@ const GalleryWrapper = styled.div`
 const Content = styled.div`
     display: flex;
     gap: 3.5rem;
-    width: 200%;
-    animation: ${({$mobile}) => $mobile ? css`${scroll} 15s linear infinite` : css`${scroll} 35s linear infinite`};
+    width: max-content;
+    animation: ${({$mobile}) => $mobile ? css`${scroll} 60s linear infinite` : css`${scroll} 70s linear infinite`};
     will-change: transform;
 `;
 
@@ -36,7 +36,7 @@ const ImageItem = styled.img`
 export default function AutoScrollable ({images}) {
     const breakpoint = 720;
     const isMobile = useIsMobile(breakpoint);
-    const scrollingImages = [...images, ...images, ...images];
+    const scrollingImages = [...images, ...images];
 
     return(
         <GalleryWrapper>
